@@ -17,7 +17,6 @@ class AddColumnUser extends Migration
             $table->string('username')->after('id');
             $table->string('phone')->after('email_verified_at');
             $table->string('address')->after('email_verified_at');
-
         });
     }
 
