@@ -18,7 +18,14 @@ Route::get('/', function () {
 });
 
 //route admin
-Route::get('/index','Admin\AdminController@index')->name('index');
+Route::get('/admin/index','Admin\AdminController@index')->name('index');
+
+//route category
+Route::get('/admin/category/index','Admin\CategoryController@index')->name('category');
+
+//route product
+Route::get('/admin/product/index','Admin\ProductController@index')->name('product');
+
 
 Auth::routes();
 Route::get('/about','HomeController@about');
